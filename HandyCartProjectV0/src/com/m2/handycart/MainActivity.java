@@ -1,15 +1,16 @@
 package com.m2.handycart;
 
 
-import com.m2.handycart.R;
-
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
+
+import com.m2.handycart.service.BluetoothService;
 
 
 
@@ -60,7 +61,11 @@ public class MainActivity extends TabActivity {
 
 		//set Windows tab as default (zero based)
 		tabHost.setCurrentTab(0);
-
+		
+		Intent bluetoothService = new Intent().setClass(this, BluetoothService.class);
+		Log.d("MainActivity", "Starting");
+		startService(bluetoothService);
+		Log.d("MainActivity", "Started");
 	}
 
 

@@ -26,6 +26,9 @@
             android:name="com.m2.handycart.WaitScanActivity"
             android:label="@string/title_activity_wait_scan" >
         </activity>
+        
+        <service android:name="com.m2.handycart.service.BluetoothService" >
+        </service>
     </application>
 
 </manifest>

@@ -26,7 +26,7 @@ public class BluetoothService extends IntentService {
 	private BluetoothServerSocket _serverSocket;
 
 	public BluetoothService() {
-		super("BluetoothServise");
+		super("BluetoothService");
 		// TODO Auto-generated constructor stub
 	}
 
