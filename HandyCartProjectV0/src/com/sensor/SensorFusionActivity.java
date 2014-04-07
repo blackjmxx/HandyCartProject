@@ -3,6 +3,7 @@ package com.sensor;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import com.m2.handycart.R;
 import com.sensorUtils.*;
 
 import android.app.Activity;
@@ -49,7 +50,7 @@ public class SensorFusionActivity extends Activity implements SensorEventListene
     public void onCreate(Bundle savedInstanceState) {
     	
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+       setContentView(R.layout.main);
         
         
         gyroOrientation[0] = 0.0f;
